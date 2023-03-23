@@ -1,0 +1,324 @@
+/* FONTS */
+@import url("/font/San Francisco/SF.css"); /* San Francisco */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); /* Roboto */
+
+:root{
+	--main-font: 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+	--size-sm: 35px;
+	--titoli-paragrafi: 45px;
+	--normal-text-size: 18px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 14px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 14px 14px transparent;
+	border: solid 4px transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 14px 14px #666;
+	border: solid 3px transparent;
+	border-radius: 14px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+	box-shadow: inset 0 0 14px 14px #909090;
+  }
+  
+  ::-webkit-scrollbar-button {
+	display: none;
+  }
+
+  #loading{
+	background-color:#fff;
+  }
+  
+
+body{
+	font-family: var(--main-font);
+    max-width: 1920px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: 0;
+}
+
+.padding{
+	padding: 0 22px;
+    padding-left: max(22px,env(safe-area-inset-left));
+    padding-right: max(22px,env(safe-area-inset-right));
+}
+
+.container100vh{
+	font-family: var(--main-font);
+	height: 100vh;
+}
+
+.main-title-container-out{
+	display: flex;
+	align-items: end;
+	justify-content: left;
+	overflow: hidden;
+}
+
+.main-title-img::-webkit-scrollbar{
+	display: none;
+}
+
+.main-title-container{
+	font-size: 17vw;
+	line-height: 0.85em;
+	font-weight: 700;
+}
+
+.nav-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	height: 25px;
+	text-decoration: none;
+	color: black;
+	z-index: 0;
+}
+
+.nav-link span:hover{
+	text-decoration: underline;
+}
+
+.nav-link img{
+	height: 100%;
+	padding-right: 3px;
+}
+
+.btn-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 25px;
+	text-decoration: none;
+	color: black;
+	margin: 50px 0;
+}
+
+.btn{
+	height: 100%;
+	border-radius: 25px;
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.b-2-btn{
+	background: url(../img/blu-camouflage.jpg);
+}
+
+.aerodinamica-btn{
+	background: url(../img/tramonto-pazzo.webp);
+}
+
+.btn img{
+	height: 90%;
+	padding-right: 5px;
+}
+
+.footer{
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.footer div{
+	height: 20px;
+	padding: 5px 0;
+}
+
+.authors{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.links{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.links a{
+	color: #00f;
+}
+
+.footer-links-icon{
+	height: 90%;
+}
+
+
+/*************************************/
+
+.containerParagrafi{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.sfondo_paragrafi{
+	z-index: 1;
+	position: absolute;
+	width: 90%;
+}
+
+.grid-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.paragrafo{
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.paragrafo div{
+	max-width: 700px;
+}
+
+.p-grid div{
+	max-width: 980px !important;
+}
+
+.titolo_paragrafo{
+	max-width: 700px;
+	font-size: var(--titoli-paragrafi);
+	font-weight: 600;
+	margin: 25px 0;
+	line-height: 0.8em;
+}
+
+.sub .titolo_paragrafo{
+	font-size: var(--size-sm) !important;
+}
+.sub .content{
+	border: none !important;
+}
+.sub{
+	max-width: 600px !important;
+}
+
+.column-content{
+	max-width: 700px;
+}
+
+.content{
+	line-height: 150%;
+	text-align: justify;
+	font-weight: 500;
+	font-size: var(--normal-text-size);
+	max-width: 700px;
+}
+
+.content{
+	border-left: 5px solid;
+	border-image: linear-gradient(#3c59a3, #ffa572) 30;
+	padding-left: 15px;
+}
+
+.colummn .immagine{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 700px;
+	align-content: center;
+	align-items: center;
+}
+
+.immagine_paragrafo{
+	width: 100%;
+	padding: 15px 0;
+}
+
+.grid-table{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 10px 0;
+}
+
+.grid-table span:nth-child(even){
+	text-align: right;
+}
+
+/***********************************/
+
+.containerMod3D-out{
+	width: 100%;
+	height: 105vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.containerMod3D{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	text-align: right;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+
+.titolo-mod-3d{
+	padding-right: 22px;
+	font-size: 12vw;
+	line-height: 0.85em;
+	font-weight: 700;
+}
+
+.modello-3D{
+	position: absolute;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	min-width: 100%;
+}
+
+
+
+.video-container {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }

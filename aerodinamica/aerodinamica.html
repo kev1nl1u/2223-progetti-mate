@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/aerodynamics-icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link href="https://kliu.win/css/grxloader.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<title>Aerodinamica</title>
+	<style>
+		.main-title-container {
+			background: url(img/tramonto-pazzo.webp);
+			/*pattern sbagliato corretto*/
+			background-size: cover;
+			background-position: bottom;
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+		}
+
+		.main-title-img {
+			position: absolute;
+			width: 55vw;
+			top: 15vh;
+			left: 30vw;
+			z-index: 10;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="loading">
+		<div class="grxloader">
+			<svg width="120" height="120" viewBox="0 0 61 51" class="shape">
+				<path
+					d="M47.3848 14.1005L38.8995 5.61519L29 15.5147L19.1005 5.61519L10.6152 14.1005L20.5147 24L10.6152 33.8995L19.1005 42.3847L29 32.4853L38.8995 42.3847L47.3848 33.8995L37.4853 24L47.3848 14.1005Z"
+					style="fill: black" fill-rule="evenodd" clip-rule="evenodd" class="grx-svg">
+				</path>
+			</svg>
+		</div>
+	</div>
+
+	<div class="padding">
+
+		<div class="container100vh main-title-container-out">
+			<img class="main-title-img" src="img/A350.png">
+			<div class="main-title-container">
+				AERO<br>DINAMICA
+			</div>
+			<a href="B-2.html" class="nav-link">
+				<img src="img/B-2-icon.png"><span>B-2</span>
+			</a>
+		</div>
+
+		<div class="containerParagrafi">
+
+			<div class="paragrafo p-grid">
+				<div class="titolo_paragrafo">Forze aerodinamiche</div>
+				<div class="grid-content">
+					<div class="content">
+						Su un velivolo in condizioni di volo orizzontale rettilineo uniforme agiscono tre forze:
+						<ul>
+							<li><b>W</b> (dall'inglese Weight): peso del velivolo, dovuto alla forza della gravità;</li>
+							<li><b>T</b> (dall'inglese Thrust): spinta dei motori;</li>
+							<li><b>R</b> forza aerodinamica risultante.</li>
+						</ul>
+						Per semplificare i calcoli la forza aerodinamica risultante (R) viene scomposta in:
+						<ul>
+							<li><b>L</b> (dall'inglese Lift): portanza;</li>
+							<li><b>D</b> (dall'inglese Drag): resistenza;</li>
+						</ul>
+						Per avere un volo rettilineo e uniforme queste forze devono essere in equilibrio, ovvero deve
+						sussistere:
+						<ul>
+							<li>L = W</li>
+							<li>D = T</li>
+						</ul>
+					</div>
+					<div class="immagine">
+						<img src="img/forze.jpg" class="immagine_paragrafo" style="margin-left: 15px;">
+					</div>
+				</div>
+			</div>
+
+			<div class="paragrafo sub">
+				<div class="titolo_paragrafo">Spinta</div>
+				<div class="content">
+					La <b>spinta</b> è la forza scambiata tra due o più due corpi in base al <b>terzo principio della
+						dinamica</b> (per ogni forza che un corpo A esercita su un altro corpo B, ne esiste
+					istantaneamente
+					un'altra uguale in modulo e direzione, ma opposta in verso, causata dal corpo B che agisce sul corpo
+					A).
+					In ambito aeronautico è la forza generata dalla variazione di quantità di moto di un propellente,
+					quantitativamente descritta dal secondo (la forza risultante agente su un corpo è la somma
+					vettoriale di
+					tutte le forze applicate ad esso) e terzo principio della dinamica.
+				</div>
+			</div>
+
+			<div class="paragrafo">
+				<div class="titolo_paragrafo">Rapporto forza/preso & guadagno di quota</div>
+				<div class="immagine">
+					<img src="img/portanza-2.gif" class="immagine_paragrafo" style="height:fit-content;">
+				</div>
+				<div class="content">
+					Per guadagnare altitudine, un velivolo deve generare <b>abbastanza portanza per superare la
+						gravità</b>
+					che sta cercando di portare l’aereo verso il basso, perdendo quota di conseguenza.<br>
+					La portanza è generata dalle ali del velivolo, che generano una <b>differenza in pressione tra la
+						parte
+						superiore ed inferiore dell’ala</b>. Questa differenza in pressione risulta nella generazione di
+					forza verso l’alto per guadagnare altitudine.<br>
+					La quantità di <b>forza risultante</b> dipende da una varietà di fattori: dimensioni e forma delle
+					ali,
+					velocità del velivolo, e la densità dell’aria.<br>
+					Per generare la portanza necessaria per guadagnare altitudine, un aereo deve superare la <b>forza di
+						resistenza </b>causata dalla resistenza dell’aria. Anche questo dipende da vari fattori quali
+					forma
+					e dimensione del velivolo, la velocità e altitudine.<br>
+					La forza di resistenza viene superata grazie alla spinta fornita dai motori, cioè i sistemi di
+					propulsione. Questi ultimi sono importanti per l'aerodinamica poiché forniscono la spinta necessaria
+					per
+					il volo. L'efficienza dei sistemi di propulsione influisce direttamente sulla velocità e sulla
+					manovrabilità del velivolo, che sono due elementi chiave nell'aerodinamica. La comprensione dei
+					sistemi
+					di propulsione e del loro impatto sull'aerodinamica del velivolo è quindi essenziale per garantire
+					che
+					il volo sia sicuro ed efficiente.<br>
+					Per <b>calcolare la portanza</b> si usa la seguente formula:
+					<b>L = Cl • ((ρ • V^2) / 2) • A</b>, dove ‘Cl’ è il coefficiente, una variabile che viene
+					determinata
+					tramite esperimenti, ‘ρ’ (rho) è la densità dell’aria, ‘V’ è la velocità e ‘A’ è l’area delle ali.
+				</div>
+				<div class="immagine">
+					<img src="img/portanza.gif" class="immagine_paragrafo" style="height:fit-content;">
+				</div>
+			</div>
+			<div class="paragrafo">
+				<div class="titolo_paragrafo">Attrito con l'aria</div>
+				<div class="content">
+					L'attrito con l'aria è un fenomeno fisico che si verifica quando un oggetto viene spinto in avanti
+					attraverso l'aria. L'aria è un fluido in movimento e quando un oggetto si muove attraverso di essa,
+					<b>
+						le molecole d'aria che si trovano davanti all'oggetto si muovono di lato e creano una resistenza
+					</b>alla sua avanzata. Questa resistenza è nota come attrito con l'aria.<br><br>
+					Quando un oggetto si muove attraverso l'aria, le molecole d'aria impattano contro la sua superficie
+					e
+					cercano di rallentarlo. Per questo motivo, più velocemente l'oggetto si muove, più attrito con
+					l'aria si
+					genera. L'attrito con l'aria è anche maggiore quando l'oggetto è più grande o più pesante.
+					L'attrito con l'aria può essere calcolato utilizzando la seguente formula: <b> F = 1/2 x ρ x v2 x A
+						x C
+					</b>, dove:
+					<ul>
+						<li><b>F</b> = Forza di attrito con l'aria (in newton)</li>
+						<li><b>ρ</b> = Densità dell'aria (in kg/m3)</li>
+						<li><b>v</b> = Velocità dell'oggetto (in m/s)</li>
+						<li><b>A</b> = Area dell'oggetto (in m2)</li>
+						<li><b>C</b> = Coefficiente di attrito (dimensionless)</li>
+					</ul>
+				</div>
+				<div class="immagine">
+					<img src="img/aerodinamica.png" class="immagine_paragrafo"
+						style="height:fit-content; border-radius: 0;">
+				</div>
+			</div>
+
+			<div class="paragrafo">
+				<div class="titolo_paragrafo">Sistemi di frenata</div>
+				<div class="content">
+					I sistemi di frenata degli aeromobili sono essenziali per assicurare un controllo sicuro e
+					affidabile
+					dell'aereo durante il decollo, l'atterraggio e le manovre in pista. Esistono diversi tipi di sistemi
+					di
+					frenata aereo, tra cui i seguenti:
+					<ul>
+						<li><b>Freni meccanici</b>: sono costituiti da un sistema di cavi, tamburi e pastiglie che si
+							applicano direttamente alle ruote dell'aereo. Sono utilizzati principalmente per aeromobili
+							di piccole dimensioni e sono generalmente meno efficaci rispetto ad altri sistemi di
+							frenata.</li>
+						<li><b>Freni idraulici</b>: sono costituiti da un sistema di tubi e cilindri idraulici che
+							trasmettono la pressione dell'olio idraulico alle pastiglie dei freni. Questi freni sono
+							molto più efficaci dei freni meccanici e sono utilizzati su aeromobili di medie e grandi
+							dimensioni.</li>
+						<li><b>Freni ad aria</b>: sono costituiti da un sistema di tubi e valvole che trasmettono l'aria
+							compressa ai freni delle ruote dell'aereo. Questi freni sono molto efficaci e sono
+							utilizzati su aeromobili di grandi dimensioni, come i jet commerciali.</li>
+						<li><b>Sistema di frenata elettromagnetico</b>: è costituito da un sistema di motori
+							elettromagnetici che frenano le ruote dell'aereo. Questo tipo di sistema di frenata viene
+							utilizzato su alcuni aeromobili militari ad alta velocità.</li>
+					</ul>
+
+					Inoltre, i sistemi di frenata aereo possono essere assistiti da altri dispositivi, come il sistema
+					di inversore di spinta (<b>reverse thrust</b>), che può ridurre la velocità dell'aereo durante
+					l'atterraggio utilizzando i motori per generare una forza opposta al movimento dell'aereo.
+
+					In sintesi, i sistemi di frenata degli aeromobili sono essenziali per assicurare un controllo sicuro
+					e affidabile dell'aereo durante il decollo, l'atterraggio e le manovre in pista. Esistono diversi
+					tipi di sistemi di frenata aereo, ognuno dei quali ha vantaggi e limitazioni specifici.
+
+					Per garantire l'efficacia del sistema di frenata, è necessario eseguire alcuni calcoli matematici,
+					tra cui:
+
+					<ul>
+						<li>Calcolo della velocità di decelerazione: Per calcolare la velocità di decelerazione del
+							sistema di frenata, è necessario conoscere la forza di frenata dell'aereo, che dipende dalla
+							quantità di carburante a bordo e dal tipo di freni utilizzati. Una volta conosciuta la forza
+							di frenata, è possibile calcolare la velocità di decelerazione utilizzando la seguente
+							formula: Vd = F/m</li>
+						<li>Calcolo della distanza di frenata: Per calcolare la distanza di frenata necessaria per
+							arrestare l'aereo, è necessario conoscere la velocità di decelerazione e la velocità
+							iniziale dell'aereo. Utilizzando la seguente formula, è possibile calcolare la distanza di
+							frenata: D = ((V^2 - Vd^2) / 2a)</li>
+						<li>Calcolo della forza di frenata necessaria: Per calcolare la forza di frenata necessaria per
+							arrestare l'aereo, è necessario conoscere la massa dell'aereo, la velocità iniziale e la
+							distanza di frenata richiesta. Utilizzando la seguente formula, è possibile calcolare la
+							forza di frenata: F = (mV^2) / (2D)</li>
+						<li>Calcolo del coefficiente di attrito: Per determinare il coefficiente di attrito tra i freni
+							dell'aereo e la superficie della pista, è necessario conoscere la forza di frenata
+							dell'aereo e il peso dell'aereo. Utilizzando la seguente formula, è possibile calcolare il
+							coefficiente di attrito: μ = F/W</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="paragrafo">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/i8CGukPCf7c"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div class="btn-container">
+			<span>Approfondisci</span>
+			<a href="B-2.html" class="b-2-btn btn">
+				<img src="img/B-2.webp">
+				<span>B-2 Sprit</span>
+			</a>
+		</div>
+
+		<div class="footer">
+			<span><b>Aerodinamica</b></span>
+			<span>Autori:</span>
+			<div class="authors">
+				<div class="author">
+					Kevin Liu
+				</div>
+				<div class="author">
+					Andrea Vaccaro
+				</div>
+				<div class="author">
+					Alessandro Anton
+				</div>
+				<div class="author">
+					Alberto Tellaroli
+				</div>
+				<div class="author">
+					Matteo Braguzzi
+				</div>
+				<div class="author">
+					Jashanpreet Singh
+				</div>
+			</div>
+			<span>Open Source:</span>
+			<div class="links">
+				<!-- github icon -->
+				<svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32"
+					data-view-component="true" class="footer-links-icon">
+					<path fill-rule="evenodd"
+						d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+					</path>
+				</svg>
+				<a href="https://github.com/kev1nl1u/aerodinamica">github</a>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/moveonscroll.js"></script>
+
+	<script src="js/hidenav.js"></script>
+
+	<!--<script src="https://kliu.win/js/garrixloader.js"></script>-->
+	<script src="js/garrixloader.js"></script>
+
+</body>
+<div class="preloadedMedia" style="display: none;">
+	<img src="img/tramonto-pazzo.webp">
+	<img src="img/tramonto-pazzo.png">
+	<img src="img/A350.png">
+	<img src="img/forze.jpg">
+	<img src="img/portanza-2.gif">
+	<img src="img/portanza.gif">
+	<img src="img/portanza.gif">
+	<img src="img/aerodinamica.png">
+</div>
+
+</html>
+
+
+<!--
+	approfondire forze aerodinamiche su un aereo
+-->
