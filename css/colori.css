@@ -1,3 +1,10 @@
+#colori{
+    background: url(../img/color-bg-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .main-title-container-colori{
     width: 100%;
     height: 100vh;

@@ -14,11 +14,29 @@
 }
 
 .scroll-section h1{
+	position: absolute;
+	top: 10px;
 	font-size: 2vw;
 	line-height: 0.85em;
 	font-weight: 700;
-	margin-top: 2%;
+	animation: changeColor 5s infinite;
 }
+
+@keyframes changeColor {
+	0% {
+		color: #0000ff;
+	}
+	33% {
+		color: #ff0000;
+	}
+	66% {
+		color: #00ff00;
+	}
+	100% {
+		color: #0000ff;
+	}
+}
+
 
 .scroll-container {
 	height: 100vh;
@@ -90,10 +108,11 @@
 }
 
 .bottone-git-hub{
+	cursor: pointer;
 	margin-left: 1%;
 	color: #090909;
 	padding: 0.7em 1.7em;
-	font-size: 18px;
+	font-size: 14px;
 	border-radius: 0.5em;
 	background: #e8e8e8;
 	border: 1px solid #e8e8e8;
