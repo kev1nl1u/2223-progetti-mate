@@ -1,0 +1,133 @@
+#loading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+	font-size: 16px;
+	position: absolute;
+	z-index: 10000;
+}
+
+.grxloader {
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	contain: layout;
+}
+
+.grxloader img {
+	transition: all 0.2s ease;
+	contain: layout;
+	margin: 0 auto;
+	height: auto;
+	width: 100px;
+}
+
+.grxloader img.shape {
+	transform: translate(100px, 1px);
+	animation: animate-cross 4.1s ease-in-out infinite forwards;
+	fill: #000;
+}
+
+
+@keyframes animate-cross {
+	0% {
+		transform: rotate(0deg) scale(0.92)
+	}
+
+	6.25% {
+		transform: rotate(45deg) scale(1)
+	}
+
+	12.5% {
+		transform: rotate(45deg)
+	}
+
+	18.75% {
+		transform: rotate(90deg)
+	}
+
+	25% {
+		transform: rotate(90deg)
+	}
+
+	31.25% {
+		transform: rotate(135deg)
+	}
+
+	37.5% {
+		transform: rotate(135deg)
+	}
+
+	43.75% {
+		transform: rotate(180deg)
+	}
+
+	50% {
+		transform: rotate(180deg)
+	}
+
+	56.25% {
+		transform: rotate(225deg)
+	}
+
+	62.5% {
+		transform: rotate(225deg)
+	}
+
+	68.75% {
+		transform: rotate(270deg)
+	}
+
+	75% {
+		transform: rotate(270deg)
+	}
+
+	81.25% {
+		transform: rotate(315deg)
+	}
+
+	87.5% {
+		transform: rotate(315deg)
+	}
+
+	93.75% {
+		opacity: 1;
+		transform: rotate(360deg)
+	}
+
+	100% {
+		transform: rotate(360deg) scale(0.92)
+	}
+}
+
+@keyframes background-fade {
+	from {
+		opacity: 1
+	}
+
+	to {
+		opacity: 0
+	}
+}
+
+.grxloader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10000;
+}
+
+@keyframes loadingFadeOut{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
