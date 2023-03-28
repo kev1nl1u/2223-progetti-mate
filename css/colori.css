@@ -1,0 +1,44 @@
+.main-title-container-colori{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.colori-title{
+    font-size: 17vw;
+	line-height: 0.85em;
+	font-weight: 700;
+}
+
+.box-opzioni{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    margin-left: 1%;
+    height: 30%;
+    justify-content: center;
+}
+
+.color-img,.color-color,.color-frq{
+    font-size: 4vw;
+	line-height: 0.85em;
+	font-weight: 700;
+    color:black;
+    transition-duration: 0.5s;
+}
+
+.color-img:hover{
+    color:  #ff004c;
+}
+
+.color-color:hover{
+    color:  #a2e258;
+}
+
+.color-frq:hover{
+    color:  #338eb3;
+}

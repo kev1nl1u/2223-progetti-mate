@@ -1,6 +1,6 @@
 /* FONTS */
-@import url("/font/San Francisco/SF.css"); /* San Francisco */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); /* Roboto */
+/*@import url("/font/San Francisco/SF.css"); /* San Francisco */
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); /* Roboto */
 
 :root{
 	--main-font: 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
@@ -10,6 +10,7 @@ html, body{
 	font-family: var(--main-font);
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 
 a{

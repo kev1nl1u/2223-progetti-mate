@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educazione Civica Lavoro</title>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/0bfe338fe3.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+    <style>
+        body {
+            background: #000000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo" draggable="false"><img src="img/MathGroupLogo.png" draggable="false"></a>
+        <ul>
+            <li><a href="#storia" draggable="false">Storia</a></li>
+            <li><a href="#crazytime" draggable="false">Crazy Time</a></li>
+            <li><a href="#wheel" draggable="false">Lucky Wheel</a></li>
+            <li><a href="#probabilita" draggable="false">Probabilità</a></li>
+            <li><a href="#ludopatia" draggable="false">Ludopatia</a></li>
+        </ul>
+        <button class="credits" onclick="openCredits()">Credits</button>
+    </nav>
+    <div class="blackWall" id="blackWall" onclick="closeCredits()">
+        <div class="creditsWindow" id="creditsWindow">
+            <h1 id="creditsTitle">Credits</h1>
+            <p>Sito realizzato da Tia Chinaglia, con le info e il resto raccolte da: Mattia Antonacci, Omar Lanfredi, Francesco Rodella, Fabio Chiodini, Sebastiano Zibordi e Alessandro Caleffi</p>
+        </div>
+    </div>
+    <div class="first">
+        <img src="img/Gradient.png" class="gradient" draggable="false">
+        <div class="images">
+            <img src="img/LuckyWheelIcon.png" draggable="false">
+        </div>
+        <h1>
+            Spiegazione<br>
+            <span>Gioco D'Azzardo</span>
+        </h1>
+        <p>Questo è un sito realizzato per spiegare il gioco d'azzardo e le sue regole, oltre che al suo legame con la matematica (le probabilità) e mettere in guardia le persone contro la ludopatia.</p>
+        <a href="#storia" class="vaigiu">Scorri <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+    <div class="sezione storia" id="storia">
+        <div class="window">
+            <h1 class="titolo">Storia del gioco d'azzardo</h1>
+            <p>
+                Il gioco d’azzardo ha una lunga storia che risale all’antichità.
+                I primi cenni a questa attività si riscontrano addirittura nel
+                3000-4000 a.C. nella civiltà egiziana, dove era già praticato
+                il gioco dei dadi. Il termine “azzardo” deriva dal francese
+                “hasard”, a sua volta termine di origine araba, “az-zahr”,
+                che significa proprio “dadi”.
+                <br><br>
+                Il gioco d’azzardo si è sviluppato parallelamente alle prime
+                civiltà umane e le più antiche forme riscontrabili di gioco
+                d’azzardo possono essere datate attorno al 3000 a.C. circa.
+                Nel corso dei secoli, il gioco d’azzardo ha assunto molte
+                forme diverse e ha subito molte trasformazioni. Nel Rinascimento,
+                ad esempio, il gioco d’azzardo era molto popolare tra i nobili
+                e i ricchi.
+                <br><br>
+                Il gioco d’azzardo è stato oggetto di studio da parte di molti
+                scienziati e psicologi. Secondo alcuni studi scientifici, il gioco
+                d’azzardo può essere considerato una forma di dipendenza patologica.
+                Sebbene il gioco d’azzardo possa essere divertente e stimolante per
+                alcune persone, può anche portare a gravi problemi finanziari e
+                sociali per altre.
+            </p><br>
+            <div class="fonti">
+                Fonti:<br>
+                <a href="https://www.cestep.it/le-dipendenze/la-dipendenza-da-gioco-d-azzardo/breve-storia-del-gioco-dazzardo/">1. cestep.it</a>
+                <a href="https://www.marcomasipsicologo.it/2019/07/29/storia-ed-evoluzione-del-gioco-dazzardo/">2. marcomasipsicologo.it</a>
+                <a href="https://www.voglioviverecosi.com/storia-gioco-d-azzardo.html">3. voglioviverecosi.com</a>
+                <a href="https://www.wikiwand.com/it/Gioco_d%27azzardo">4. it.wikipedia.org</a>
+                <a href="https://www.betpassion.it/approfondimenti/casino/storia-del-gioco">5. betpassion.it</a>
+            </div>
+            <img src="img/ClessidraIcon.png" draggable="false">
+        </div>
+    </div>
+    <div class="sezione crazytime" id="crazytime">
+        <div class="window">
+            <h1>Cos'è il Crazy Time?</h1>
+            <p>
+                Come esempio di gioco d'azzardo volevamo prendere il Crazy Time, un
+                gioco ben noto e molto famoso:<br><br>
+                Crazy Time è un gioco d'azzardo online che si basa sulla ruota della
+                fortuna e che assomiglia alla ben nota ruota della fortuna.
+                Il gioco è un live streaming in cui il gameplay viene visualizzato
+                in tempo reale. Il gioco d'azzardo multiplayer si basa sul girare
+                la ruota, che fa l'ospite dello spettacolo, dopo aver fatto le
+                scommesse. Crazy Time presenta una ruota principale, uno slot
+                superiore sopra la ruota del denaro e quattro entusiasmanti
+                giochi bonus: Cash Hunt, Pachinko, Coin Flip e Crazy Time.
+                La ruota dei soldi ha 54 segmenti e ognuno contiene un numero
+                (1, 2, 5 o 10) o un gioco bonus.
+            </p>
+            <div class="fonti">
+                Fonti:<br>
+                <a href="https://crazytimegame.com/it/">1. crazytimegame.com</a>
+                <a href="https://crazy-time-play.org/it/">2. crazy-time-play.org</a>
+                <a href="https://www.starvegas.it/it/casino-live/crazy-time">3. starvegas.it</a>
+                <a href="hhttps://www.crazytimemania.it/strategie-di-gioco/">4. crazytimemania.it</a>
+                <a href="https://spikeslot.com/live-stats/crazy-time/it">5. spikeslot.com</a>
+            </div>
+            <img src="img/CrazyTimeLogo.png" draggable="false">
+        </div>
+    </div>
+    <div class="sezione wheel" id="wheel">
+        <h1></h1>
+        <div class="window" style="align-items: center;">
+            <h1>Ecco qui la ruota della fortuna!</h1>
+            <iframe src="wheel.html" height="1000" width="1000" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div class="sezione probabilita" id="probabilita">
+        <div class="window">
+            <h1>Cosa sono le probabilità?</h1>
+            <p>
+                La probabilità è la parte della matematica che si occupa
+                dello studio dei fenomeni aleatori, ossia dei fenomeni di
+                cui sono noti i possibili risultati ma di cui non si può
+                sapere a priori quale sarà il risultato finale. Si
+                definisce probabilità di un evento il rapporto fra il
+                numero dei casi favorevoli ed il numero dei casi possibili,
+                supposti tutti ugualmente possibili. Il calcolo delle
+                probabilità si propone di associare ad ogni evento un numero,
+                denominato probabilità dell’evento, che consente di esprimere
+                quantitativamente il grado di fiducia sul verificarsi dell'evento.
+
+                <br><br>
+
+                La probabilità è una branca della matematica molto importante e
+                viene utilizzata in molti campi come la statistica, la fisica,
+                l’informatica e l’economia. La probabilità è anche utilizzata
+                in molti giochi d’azzardo come il poker e la roulette. In questi
+                giochi, la probabilità viene utilizzata per calcolare le possibilità
+                di vincita e di perdita.
+            </p>
+            <div class="fonti">
+                Fonti:<br>
+                <a href="https://bing.com/search?q=Cosa+sono+le+probabilit%c3%a0%3f+Spiegazione+matematica">1. bing.com</a>
+                <a href="https://www.studenti.it/matematica/definizione-di-probabilita-matematica-90.jspc">2. studenti.it</a>
+                <a href="https://www.youmath.it/lezioni/probabilita.html">3. youmath.it</a>
+            </div>
+            <img src="img/PercentualeIcon.png" draggable="false" style="height: 400px;">
+        </div>
+    </div>
+    <div class="sezione ludopatia" id="ludopatia">
+        <div class="window">
+            <h1>Cos'è la ludopatia e come si contrasta?</h1>
+            <p>
+                La ludopatia è una dipendenza patologica dal gioco d'azzardo
+                che può portare a conseguenze negative sulla salute mentale e
+                fisica della persona. La ludopatia è un fenomeno dilagante e
+                trasversale, in molti casi una vera e propria patologia che
+                rende incapaci di resistere all’impulso di giocare d’azzardo
+                in tutte le sue varianti off-line e on-line: dalla roulette
+                alle slot machine, dal blackjack al gioco digitale e alle
+                scommesse. 
+
+                <br><br>
+
+                Per contrastare la ludopatia esistono diverse associazioni
+                che offrono supporto e aiuto a chi ne soffre. Inoltre, è
+                stato attivato un <a href="tel:800558822">numero verde nazionale</a> per chiedere aiuto. 
+            </p>
+            <div class="fonti">
+                Fonti:<br>
+                <a href="https://www.ipsico.it/news/ludopatia-quando-il-gioco-diventa-malattia/">1. ipsico.it</a>
+                <a href="https://gdc.ancidigitale.it/ludopatia-attivato-un-numero-verde-nazionale-per-chiedere-aiuto/">2. gdc.ancidigitale.it</a>
+                <a href="https://www.laleggepertutti.it/135165_come-impedire-il-gioco-dazzardo-a-chi-soffre-di-ludopatia">3. laleggepertutti.it</a>
+            </div>
+            <img src="img/AddictionIcon.png" draggable="false">
+        </div>
+    </div>
+    <a href="#" class="returnBtn" id="returnBtn">Torna su <i class="fa-solid fa-arrow-up"></i></a>
+    <script src="js/script.js"></script>
+</body>
+</html>

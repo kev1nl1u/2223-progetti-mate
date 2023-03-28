@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruota della Fortuna</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="https://kit.fontawesome.com/0bfe338fe3.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.3.js"></script>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body {
+            background: none;
+        }
+        
+        canvas {
+            max-width: 400px;
+            max-height: 400px;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            border-radius: 10px;
+            background: #ffffff20;
+            color: #ffffff80;
+            font-size: 20px;
+            border: none;
+            width: 150px;
+            height: 60px;
+            z-index: 3;
+            cursor: pointer;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            user-select: none;
+            transition: .3s;
+        }
+
+        @media screen and (max-width: 810px) {
+            button {
+                bottom: 0;
+            }
+        }
+
+        button i {
+            margin-left: 5px;
+        }
+
+        button:hover {
+            background: #ffffff30;
+            color: #ffffff;
+        }
+
+        .freccia {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 130px;
+            color: #000000;
+            z-index: 4;
+        }
+
+        body {
+            max-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <i class="fa-solid fa-sort-down freccia"></i>
+    <script src="js/data.js"></script>
+    <script src="js/wheel.js"></script>
+</body>
+</html>
