@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1" />
+
+    <title>Il linguaggio segreto dell'universo</title>
+    <link rel="stylesheet" href="font/SF.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/electromagneticSpectrum.css"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <section class="starting_page" id="start">
+      <div>
+        <h1>
+          Inserisci un'<span class="immagine" id="immagine">immagine</span>.
+        </h1>
+        <br />
+        <h1>Prendi il <span class="colore" id="colore">colore</span>.</h1>
+        <br />
+        <h1>
+          Scopri la <span class="frequenza" id="frequenza">frequenza</span>.
+        </h1>
+        <br />
+        <a class="arrow" href="#file-picker"
+          ><i class="fa-solid fa-chevron-down fa-bounce fa-2xl"></i
+        ></a>
+      </div>
+    </section>
+    <section id="file-picker">
+      <div class="drop-container">
+        <span class="drop-title">Rilascia la tua immagine qua</span>
+        <div>o</div>
+        <input
+          class="filePicker"
+          type="file"
+          id="images"
+          accept="image/*"
+          onchange="loadImg(event);drawCanvas(this);"
+          required
+        /><label for="images">Carica file</label>
+      </div>
+      <a class="arrow" href="#color-picker"
+        ><i class="fa-solid fa-chevron-down fa-bounce fa-2xl"></i
+      ></a>
+    </section>
+
+    <section id="color-picker">
+      <div class="color-container">
+        <img id="imgInp" src="" />
+        <canvas class="canvas" id="canvas"></canvas>
+        <div class="container">
+          <div class="result-box" id="result-box"></div>
+        </div>
+        <span class="result-text" id="result-text"></span>
+      </div>
+
+      <!-- TODO: Non se metterlo e come metterlo -->
+      <!-- <div id="color-hue"></div> -->
+
+      <a class="arrow" href="#grafico-1"
+        ><i class="fa-solid fa-chevron-down fa-bounce fa-2xl"></i
+      ></a>
+    </section>
+
+    <!-- Non sono convinto -->
+    <section id="grafico-1">
+      <div id="waveViewContainer" class="waveViewContainer">
+        <h3 class="waveTitle">Wave View</h3>
+        <div id="waveView" class="waveView"></div>
+        <div id="frequency" class="frequency">
+          Frequency = 5.38 x 10<sup>14</sup>
+        </div>
+      </div>
+
+      <a class="arrow" href="#grafico-2"
+        ><i class="fa-solid fa-chevron-down fa-bounce fa-2xl"></i
+      ></a>
+    </section>
+
+    <!-- Non sono convinto -->
+    <section id="grafico-2">
+      <div id="photonViewContainer" class="photonViewContainer">
+        <h3 class="photonTitle">Photon View</h3>
+        <div id="photonView" class="photonView"></div>
+        <div id="energy" class="energy">Energy = 2.23 (eV)</div>
+      </div>
+    </section>
+
+    <!-- Javascript Scripts Go Here -->
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <!-- These are needed for the Sliders to function. If your page is already using D3 you can skip these -->
+    <script
+      src="js/d3.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="js/kcvs-slider.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="js/kcvs-graph.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- <script src="https://files.lib.kcvs.ca/kcvsTheme.4.current.min.js" type="text/javascript"></script> -->
+
+    <script
+      src="https://kit.fontawesome.com/d45470356d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/electromagneticSpectrum.js" type="text/javascript"></script>
+
+    <!-- Serve per visualizzare l'immagine (non so come funziona ma fa lo stesso l'importante è che funzioni) -->
+    <script>
+      var loadImg = function (event) {
+        var image = document.getElementById("imgInp");
+        image.src = URL.createObjectURL(event.target.files[0]);
+        $("#color-picker")[0].scrollIntoView();
+      };
+    </script>
+  </body>
+</html>

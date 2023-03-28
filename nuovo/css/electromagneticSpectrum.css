@@ -1,0 +1,538 @@
+
+.contentContainer {
+    width: 100%;
+  }
+  
+  .breakoutBox {
+    width: 100%;
+    height: auto;
+    /* padding-bottom:20%; */
+    padding-left: 65px;
+    box-sizing: border-box;
+    /* background:white; */
+  }
+  
+  .dropdown {
+    /* background:green; */
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 29.89%;
+    width: 2.82%;
+  }
+  
+  .kcvsPanel {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .kcvsSliderPanel input {
+    border-radius: 0;
+    background-color: #d2d2d2;
+  }
+  
+  .darkMode .kcvsSliderPanel input {
+    background-color: white;
+  }
+  
+  .kcvsSliderPanel .kcvsWidgetTitle {
+    float: none;
+  }
+  
+  .kcvsSliderPanel .sliderTrack.sliderWithScale {
+    margin-bottom: 0.4rem;
+  }
+  
+  #wavelengthSliderScaleRow {
+    position: relative;
+  }
+  
+  .kcvsLabel.kcvsSliderScale.kcvsSliderScale-min {
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+  
+  .kcvsLabel.kcvsSliderScale.kcvsSliderScale-max {
+    position: absolute;
+    top: -35px;
+    right: 0;
+  }
+  
+  .kcvsGraphLine {
+    stroke-width: 2px;
+  }
+  
+  .irSpectrum {
+    background: linear-gradient(to right, rgb(97, 0, 0), rgb(95, 109, 63));
+    width: 67.89%;
+  }
+  
+  .irSpectrum,
+  .kcvsSliderPanel .sliderTrack,
+  .spectrum,
+  .uvSpectrum,
+  .visibleSpectrum {
+    height: 60px;
+  }
+  
+  .kcvsSliderPanel .sliderHandle {
+    background-color: #d2d2d280;
+    border-radius: 0;
+    height: 100%;
+    width: 1rem;
+  }
+  
+  .sliderHandleContainer {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    color: black;
+  }
+  
+  .darkMode .sliderHandleContainer {
+    color: #d2d2d2;
+  }
+  
+  .sliderHandleStrip {
+    position: absolute;
+    left: 50%;
+    background-color: white;
+    width: 0.25rem;
+    height: 100%;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+  }
+  
+  .kcvsSliderPanel .sliderTrack {
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  
+  .kcvsSliderPanel .sliderTrack,
+  .visibleSpectrum {
+    background: linear-gradient(to right, rgb(56, 0, 51), rgb(106, 0, 135), rgb(106, 0, 234), rgb(0, 0, 203), rgb(0, 106, 203), rgb(0, 184, 203), rgb(0, 224, 146), rgb(54, 224, 0), rgb(255, 235, 0), rgb(255, 109, 0), rgb(255, 30, 0), rgb(239, 0, 0), rgb(217, 0, 0), rgb(195, 0, 0), rgb(172, 0, 0), rgb(148, 0, 0), rgb(123, 0, 0), rgb(97, 0, 0));
+  }
+  
+  #mainContent {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    background-color: #f5f5f7;
+  }
+  
+  .photonViewContainer {
+    /* background-color:blue; */
+    box-sizing: border-box;
+    grid-column: 2/3;
+    /* padding-bottom:75%; */
+    width: 70%;
+  }
+  
+  .spectrum {
+    /* background:gresen; */
+    display: flex;
+    flex-wrap: nowrap;
+    /* margin-bottom:75px; */
+    margin-top: 35px;
+    position: relative;
+  }
+  
+  .spectrumContainer {
+    grid-column: 1/-1;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .spread {
+    /* background:yellow; */
+    width: 100%;
+    height: 60%;
+  }
+  
+  .spreadBlack {
+    width: 100%;
+    /* height: 100px; */
+  }
+  
+  .spreadWhite {
+    width: 100%;
+    /* height: 100px; */
+    display: none;
+  }
+  
+  .darkMode .spreadBlack {
+    display: none;
+  }
+  
+  .darkMode .spreadWhite {
+    display: initial;
+  }
+  
+  .darkMode .kcvsAxisLabel {
+    color: #d2d2d2;
+    fill: #d2d2d2;
+  }
+  
+  .darkMode a:link {
+    color: #03b9ab;
+  }
+  
+  .uvSpectrum {
+    background: linear-gradient(to right, rgb(255, 116, 243), rgb(56, 0, 51));
+    width: 29.89%;
+  }
+  
+  .visibleSpectrum {
+    width: 2.22%;
+  }
+  
+  .wavelengthContainer {
+    padding-left: 65px;
+    text-align: right;
+  }
+  
+  .waveViewContainer {
+    /* background-color:red; */
+    box-sizing: border-box;
+    grid-column: 1/2;
+    /* padding-bottom:75%; */
+    width: 70%;
+  }
+  
+  .photonView,
+  .waveView {
+    /* background:green; */
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* padding-bottom:75%; */
+  }
+  
+  /* ********************************************************************************** */
+  /* Absolute Positioning */
+  
+  .frequencyTitle {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+  }
+  
+  .gammaLabel,
+  .irLabel,
+  .microwaveLabel,
+  .radioLabel,
+  .uvLabel,
+  .xrayLabel {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+  }
+  
+  .gammaLabel {
+    left: 3.5%;
+  }
+  
+  .xrayLabel {
+    left: 14.61%;
+  }
+  
+  .uvLabel {
+    left: 26.055%;
+  }
+  
+  .irLabel {
+    left: 41.055%;
+  }
+  
+  .microwaveLabel {
+    left: 58.335%;
+  }
+  
+  .radioLabel {
+    left: 83.335%;
+  }
+  
+  .gammaLine,
+  .irLine,
+  .microwaveLine,
+  .xrayLine {
+    background: white;
+    box-shadow: (1px 1px 2px black);
+    height: 110%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+  }
+  
+  .gammaLine {
+    left: 7%;
+  }
+  
+  .xrayLine {
+    left: 22.22%;
+  }
+  
+  .irLine {
+    left: 50%;
+  }
+  
+  .microwaveLine {
+    left: 66.67%;
+  }
+  
+  .wavelengthTitle {
+    position: absolute;
+    right: 0;
+    top: -44px;
+  }
+  
+  .wl-12,
+  .wl-10,
+  .wl-8,
+  .wl-6,
+  .wl-4,
+  .wl-2,
+  .wl1,
+  .wl2,
+  .wl4 {
+    position: absolute;
+    top: -12.5px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .wl-12 {
+    left: 0;
+  }
+  
+  .wl-10 {
+    left: 11.11%;
+  }
+  
+  .wl-8 {
+    left: 22.22%;
+  }
+  
+  .wl-6 {
+    left: 33.33%;
+  }
+  
+  .wl-4 {
+    left: 44.44%;
+  }
+  
+  .wl-2 {
+    left: 55.55%;
+  }
+  
+  .wl1 {
+    left: 66.66%;
+  }
+  
+  .wl2 {
+    left: 77.77%;
+  }
+  
+  .wl4 {
+    left: 88.88%;
+  }
+  
+  .f20,
+  .f18,
+  .f16,
+  .f14,
+  .f12,
+  .f10,
+  .f8,
+  .f6,
+  .f4,
+  .f2 {
+    bottom: -37.5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .f20 {
+    left: 0;
+  }
+  
+  .f18 {
+    left: 10%;
+  }
+  
+  .f16 {
+    left: 20%;
+  }
+  
+  .f14 {
+    left: 30%;
+    display: none;
+  }
+  
+  .f12 {
+    left: 40%;
+  }
+  
+  .f10 {
+    left: 50%;
+  }
+  
+  .f8 {
+    left: 60%;
+  }
+  
+  .f6 {
+    left: 70%;
+  }
+  
+  .f4 {
+    left: 80%;
+  }
+  
+  .f2 {
+    left: 90%;
+  }
+  
+  /* ********************************************************************************** */
+  /* Media Queries */
+  
+  @media screen and (max-width: 700px) {
+    #waveViewContainer {
+      grid-column: 1/-1;
+    }
+  
+    #photonViewContainer {
+      grid-column: 1/-1;
+    }
+  
+  
+    .gammaLabel,
+    .irLabel,
+    .microwaveLabel,
+    .radioLabel,
+    .uvLabel,
+    .xrayLabel {
+      font-size: 2vw;
+    }
+  
+  
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+  
+    .spreadBlack,
+    .spreadWhite {
+      height: 45px;
+    }
+  
+    .wl-10,
+    .wl-6,
+    .wl-2,
+    .wl4,
+    .f18,
+    .f14,
+    .f10,
+    .f6,
+    .f4,
+    .f2 {
+      display: none;
+    }
+  
+    .frequencyTitle,
+    .wavelengthTitle {
+      font-size: 10px;
+    }
+  
+    .f20,
+    .f18,
+    .f16,
+    .f14,
+    .f12,
+    .f10,
+    .f8,
+    .f6,
+    .f4,
+    .f2,
+    .frequencyTitle {
+      bottom: -30px;
+      transform: translate(-0%, -100%);
+      font-size: 2vw;
+    }
+  
+    .kcvsSliderPanel .kcvsWidgetTitle,
+    .kcvsLabel.kcvsSliderScale.kcvsSliderScale-min,
+    .kcvsLabel.kcvsSliderScale.kcvsSliderScale-max {
+      font-size: 3vw;
+    }
+  
+  }
+  
+  @media screen and (max-width: 400px) {
+  
+    .f20,
+    .f18,
+    .f16,
+    .f14,
+    .f12,
+    .f10,
+    .f8,
+    .f6,
+    .f4,
+    .f2,
+    .frequencyTitle {
+      bottom: -28px;
+    }
+  
+    .kcvsSliderPanel .kcvsWidgetTitle,
+    .kcvsLabel.kcvsSliderScale.kcvsSliderScale-min,
+    .kcvsLabel.kcvsSliderScale.kcvsSliderScale-max {
+      top: -30px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 300px) {
+  
+    .f20,
+    .f18,
+    .f16,
+    .f14,
+    .f12,
+    .f10,
+    .f8,
+    .f6,
+    .f4,
+    .f2,
+    .frequencyTitle {
+      bottom: -20px;
+    }
+  
+    .kcvsSliderPanel .kcvsWidgetTitle,
+    .kcvsLabel.kcvsSliderScale.kcvsSliderScale-min,
+    .kcvsLabel.kcvsSliderScale.kcvsSliderScale-max {
+      top: -25px;
+    }
+  
+  }
+  
+  .istruzioni {
+    display: flex;
+  
+  }
+  
+  .tips {
+    margin: 1%;
+    width: 50%;
+    margin-left: 5%;
+  }

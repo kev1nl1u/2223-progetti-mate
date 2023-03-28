@@ -3,11 +3,21 @@
 }
 
 .scroll-section {
+	width: 100%;
 	height: 100vh;
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 	display: flex;
 	position: relative;
+	flex-direction: column;
+	align-items: center;
+}
+
+.scroll-section h1{
+	font-size: 2vw;
+	line-height: 0.85em;
+	font-weight: 700;
+	margin-top: 2%;
 }
 
 .scroll-container {
@@ -62,6 +72,7 @@
 }
 
 .paragraph{
+	width: 50%;
 	text-align: center;
 	margin: 3vh 0;
 }
@@ -73,7 +84,36 @@
 }
 
 
-.sponsor svg, .sponsor img{
-	margin: 5px 10px;
-	height: 35px;
+.sponsor{
+	margin-top: 2%;
+	width: 100%;
 }
+
+.bottone-git-hub{
+	margin-left: 1%;
+	color: #090909;
+	padding: 0.7em 1.7em;
+	font-size: 18px;
+	border-radius: 0.5em;
+	background: #e8e8e8;
+	border: 1px solid #e8e8e8;
+	transition: all .3s;
+	box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-ms-border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	font-weight: 700;
+}
+  
+.bottone-git-hub:hover {
+	border: 1px solid black;
+}
+  
+.bottone-git-hub:active {
+	box-shadow: 4px 4px 12px black, -4px -4px 12px #ffffff;
+  }

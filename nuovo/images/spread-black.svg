@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="846" height="100" viewbox="0 0 846 100">
+    <line x1="252" y1="0" x2="252" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="0" x2="272" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="0" y1="100" x2="252" y2="40" style="stroke:black;stroke-width:2" />
+    <line x1="272" y1="40" x2="846" y2="100" style="stroke:black;stroke-width:2" />
+</svg>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path style="fill:#03b9ab" d="M22 12l-20 12 5-12-5-12z" transform="rotate(180 12 12)"/>
+</svg> -->
